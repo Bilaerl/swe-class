@@ -14,7 +14,8 @@ uppercase = []
 special_characters = ["!","@","#","$","%","^","&","*","(",")","+","?","/",".",">",",","<","|",";",":","]",":",",","}","[","{","}"]
 
 for i in lowercase:
-    uppercase.append(i)
+    uppercase.append(i.upper())
+
     
 
 def small_letters():
@@ -53,5 +54,5 @@ def main():
     randomPassword=''
     for i in random_password:
         randomPassword+=i
-    print(randomPassword)
+    print('your password is: {}'.format(randomPassword))
 main()
