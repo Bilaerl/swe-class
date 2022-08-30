@@ -12,3 +12,8 @@ lowercase= ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
 uppercase = [lowercase.upper() for lowercase in lowercase]
 special_characters=["!","@","#","$","%","^","&","*","(",")","+","?","/",".",">",",","<","|",";",":","]",":",",","}","[","{","}"]
 
+def small_letters():
+    global random_password
+    random_password+=random.choices(lowercase, k=2)
+small_letters()
+print(random_password)
