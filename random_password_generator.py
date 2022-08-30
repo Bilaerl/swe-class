@@ -19,7 +19,7 @@ def special_chars():
 
 def random_password():
     random.shuffle(random_password)
-    ''.join(random_password)
+    ''.join(str(random_password) for random_password in random_password)
     return random_password
 
 def main():
