@@ -1,3 +1,9 @@
+"""This program generates a string containing eight random characters, two each of 
+capital letters, small letters, numerical characters and special character,
+using the python built-in random module
+""""
+
+
 import random
 
 random_password = []
@@ -46,6 +52,8 @@ def random_password():
     return random_password
 
 def main():
+    """"calls all the functions above
+    """
     small_letters()
     capital_letters()
     num_chars()
