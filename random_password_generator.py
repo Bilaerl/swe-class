@@ -6,16 +6,33 @@ uppercase = [lowercase.upper() for lowercase in lowercase]
 special_characters = ["!","@","#","$","%","^","&","*","(",")","+","?","/",".",">",",","<","|",";",":","]",":",",","}","[","{","}"]
 
 def small_letters():
+    
+    """picks two elements from the lowercase list 
+        and adds them to the random_password list"""
+        
     random_password+=random.choices(lowercase, k=2)
 
+
 def capital_letters():
+    """picks two elements from the uppercase list 
+        and adds them to the random_password list"""
+        
      random_password+=random.choices(uppercase, k=2)
 
+
 def num_chars():
+    """picks two random integers from 0 to 10 
+        and adds them to the random_password list"""
+        
     random_password+=random.choices(range(10),k=2)
 
+
 def special_chars():
+    """picks two elements from the lowercase list 
+        and adds them to the random_password list"""
+        
     random_password+=random.choices(special_characters,k=2)
+
 
 def random_password():
     random.shuffle(random_password)
