@@ -84,7 +84,7 @@ my_num = nums_selection()
 # print(my_capital + my_small + my_character + my_num)
 
 
-def main():
+def first_main():
     password = 0
     while password < 9:
         # main_password = random.sample(my_capital + my_small + my_character + my_num,8)
@@ -100,6 +100,25 @@ def main():
         print("".join(last_password))
 
         
-main()
+# first_main()
+
+
+def second_main():
+    password = 0
+    while password < 9:
+        # main_password = random.sample(my_capital + my_small + my_character + my_num,8)
+        my_capital1 =capital_selection()
+        my_small1 = small_selection()
+        my_character1 = character_selection()
+        my_num1 = nums_selection()
+        # print(capital_selection())
+        # main_password = random.sample(my_capital + my_small + my_character + my_num,8)
+        password += 1
+        last_password = my_capital1 + my_small1 + my_character1 + my_num1
+        # last_password = main_password
+        print("".join(last_password))
+
+        
+second_main()
 
 
