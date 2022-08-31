@@ -7,14 +7,14 @@ special_characters = ["!","@","#","$","%","^","&","*","(",")","+","?","/",".",">
 
 def small_letters():
     
-    """picks two elements from the lowercase list 
+    """randomly picks two elements from the lowercase list 
         and adds them to the random_password list"""
         
     random_password+=random.choices(lowercase, k=2)
 
 
 def capital_letters():
-    """picks two elements from the uppercase list 
+    """randomly picks two elements from the uppercase list 
         and adds them to the random_password list"""
         
      random_password+=random.choices(uppercase, k=2)
@@ -28,13 +28,19 @@ def num_chars():
 
 
 def special_chars():
-    """picks two elements from the lowercase list 
+    """randomly picks two elements from the special_characters list 
         and adds them to the random_password list"""
         
     random_password+=random.choices(special_characters,k=2)
 
 
 def random_password():
+    
+    """shuffles the random_password list
+    and forms a string using the join() method
+    returns the formed string
+    """
+    
     random.shuffle(random_password)
     ''.join(str(random_password) for random_password in random_password)
     return random_password
